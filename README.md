@@ -1,2 +1,2 @@
-# Swift-Self-Learning-Project
-In this project, I will share the code I learned.
+# Swift4 自學筆記
+Swift學習分享的程式碼
