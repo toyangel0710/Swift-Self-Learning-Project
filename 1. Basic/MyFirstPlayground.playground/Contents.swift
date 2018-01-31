@@ -89,11 +89,12 @@ x1 += 1 // x1 = x1 + 1
 5<=5
 
 //=========
-//if else
+//if else (條件判斷）
 //=========
-var age = 20
+var age = 18
 var tall = 180
 var hair = "短髮"
+
 if age >= 20 {
     //成立
     if tall > 180, hair == "長髮" {
@@ -106,17 +107,94 @@ if age >= 20 {
 }
 
 //========
-//For迴圈
+//switch （條件判斷）
 //========
-for index in 0..<3 {
-    print(index)
-}
-//1*1=1 2*1=2 3*1=3
-//1*2=2 2*2=4 3*2=6
+//判斷oddvar是不是奇數
+var oddvar = 5;
 
-for x in 1...9 {
-    for y in 1...9 {
-        print("\(x)*\(y)=\(x*y) ", separator: "", terminator: "")
-    }
-    print("")
+switch oddvar {
+case 1,3,5,7,9:
+    print("oddvar是奇數")
+case 2,4,6,8,10:
+    print("oddvar是偶數")
+default:
+    print("無法判斷")
 }
+
+switch age {
+case 0..<20:
+    print("未成年人")
+default:
+    print("成年人")
+}
+
+//========
+//For 迴圈
+//========
+//for index in 0..<3 {
+//    print(index)
+//}
+
+/* 99乘法表
+練習印出下面的排版
+1*1=1 2*1=2 3*1=3
+1*2=2 2*2=4 3*2=6
+*/
+//for x in 0...9 {
+//    if x == 0 {
+//        continue
+//    }
+//    for y in 0...9 {
+//        if y == 0 {
+//            continue
+//        }
+//        print("\(x)*\(y)=\(x*y) ", separator: "", terminator: "")
+//    }
+//    print("")
+//}
+
+//========
+//while (迴圈）
+//========
+for x in 0...3 {
+    print("x=\(x)")
+}
+
+var x2 = 0
+while x2<=3 {
+    print("x2=\(x2)")
+    x2 += 1
+}
+
+//========
+//repeat while （迴圈）
+//========
+repeat {
+    print("x3=\(x2)")
+    x2 += 1
+} while x2 <= 3
+
+//========
+//控制轉移語句
+//========
+//continue, break, return
+
+var continueVar = 5
+var c2 = 0
+while(c2 < 10) {
+    c2 += 1
+    if c2 == continueVar {
+        break
+    }
+    print("c2 = \(c2)")
+}
+
+
+//計算兩數相加並回傳（return)結果
+func addValue(x:Int, y:Int) -> Int {
+    return x+y
+}
+
+var twoValueAddResult = addValue(x: 2, y: 3)
+print("Result: \(twoValueAddResult)")
+

@@ -22,7 +22,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func randomPickAMeal(_ sender: UIButton) {
-        arc4random_uniform(<#T##__upper_bound: UInt32##UInt32#>)
         let index = Int(arc4random_uniform(3))
         switch index {
         case 0:
