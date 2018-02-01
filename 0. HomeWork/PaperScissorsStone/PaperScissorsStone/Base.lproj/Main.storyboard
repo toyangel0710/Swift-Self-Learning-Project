@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PaperScissorsStone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="猜拳遊戲" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TW2-Hp-I1I">
+                                <rect key="frame" x="127" y="28" width="121.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cFh-dA-2su" userLabel="Result Stack View">
+                                <rect key="frame" x="16" y="155" width="343" height="199"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZoT-8o-rsr" userLabel="Result Title Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你的出拳" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oip-Ei-b06">
+                                                <rect key="frame" x="0.0" y="0.5" width="171.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="電腦出拳" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QD9-e1-Rrl">
+                                                <rect key="frame" x="171.5" y="0.5" width="171.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EYt-d3-TEe" userLabel="Result Image Stack View">
+                                        <rect key="frame" x="0.0" y="29" width="343" height="170"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8jG-Qv-1mi">
+                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="170"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="8jG-Qv-1mi" secondAttribute="height" multiplier="171:170" id="fRR-J4-8wH"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VbI-UA-zRi">
+                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="170"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="VbI-UA-zRi" secondAttribute="height" multiplier="171:170" id="WDG-SN-xPm"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZoT-8o-rsr" firstAttribute="leading" secondItem="cFh-dA-2su" secondAttribute="leading" id="Pkx-AC-ZRJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZoT-8o-rsr" secondAttribute="trailing" id="WIR-eY-L3m"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mrh-AK-EPT" userLabel="Play Button Stack View">
+                                <rect key="frame" x="16" y="613" width="343" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfQ-VV-XBM" customClass="PlayButtonControl" customModule="PaperScissorsStone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="101" height="34"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0S-Oc-k90" customClass="PlayButtonControl" customModule="PaperScissorsStone" customModuleProvider="target">
+                                        <rect key="frame" x="121" y="0.0" width="101" height="34"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecn-EQ-fRU" customClass="PlayButtonControl" customModule="PaperScissorsStone" customModuleProvider="target">
+                                        <rect key="frame" x="242" y="0.0" width="101" height="34"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IVh-kK-5rI" userLabel="Count Stack">
+                                <rect key="frame" x="23" y="426" width="343" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你贏了0次" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ke0-hw-o6M">
+                                        <rect key="frame" x="0.0" y="0.0" width="171.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你輸了0次" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhL-h9-yLi">
+                                        <rect key="frame" x="171.5" y="0.0" width="171.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mrh-AK-EPT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0ZA-jR-fIa"/>
+                            <constraint firstItem="IVh-kK-5rI" firstAttribute="top" secondItem="TW2-Hp-I1I" secondAttribute="bottom" constant="362" id="3Ee-IM-YZf"/>
+                            <constraint firstItem="IVh-kK-5rI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="C3w-O7-8XE"/>
+                            <constraint firstItem="TW2-Hp-I1I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="CPy-9f-pLo"/>
+                            <constraint firstItem="TW2-Hp-I1I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EkU-86-mPW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cFh-dA-2su" secondAttribute="bottom" constant="313" id="Q6O-9d-o02"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mrh-AK-EPT" secondAttribute="bottom" constant="20" id="VAf-hC-tbL"/>
+                            <constraint firstItem="IVh-kK-5rI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="7" id="WTy-2S-zsb"/>
+                            <constraint firstItem="cFh-dA-2su" firstAttribute="leading" secondItem="IVh-kK-5rI" secondAttribute="leading" constant="-7" id="gHX-Wi-cHQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mrh-AK-EPT" secondAttribute="trailing" constant="16" id="nAA-K9-Sg6"/>
+                            <constraint firstItem="cFh-dA-2su" firstAttribute="trailing" secondItem="IVh-kK-5rI" secondAttribute="trailing" constant="-7" id="tKi-vP-5s7"/>
+                            <constraint firstItem="cFh-dA-2su" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="155" id="vIz-XR-Y86"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="buttonCollection" destination="VfQ-VV-XBM" collectionClass="NSMutableArray" id="OEH-aX-ZHf"/>
+                        <outletCollection property="buttonCollection" destination="K0S-Oc-k90" collectionClass="NSMutableArray" id="rCr-3G-nGa"/>
+                        <outletCollection property="buttonCollection" destination="ecn-EQ-fRU" collectionClass="NSMutableArray" id="VE4-2r-jaj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="29.23538230884558"/>
+        </scene>
+    </scenes>
+</document>
