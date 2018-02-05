@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="猜拳遊戲" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TW2-Hp-I1I">
-                                <rect key="frame" x="127" y="28" width="121.5" height="36"/>
+                                <rect key="frame" x="127" y="60" width="121.5" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -31,33 +31,33 @@
                                 <rect key="frame" x="16" y="155" width="343" height="199"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZoT-8o-rsr" userLabel="Result Title Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="21"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="25"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你的出拳" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oip-Ei-b06">
-                                                <rect key="frame" x="0.0" y="0.5" width="171.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="2.5" width="171.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="電腦出拳" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QD9-e1-Rrl">
-                                                <rect key="frame" x="171.5" y="0.5" width="171.5" height="20.5"/>
+                                                <rect key="frame" x="171.5" y="2.5" width="171.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EYt-d3-TEe" userLabel="Result Image Stack View">
-                                        <rect key="frame" x="0.0" y="29" width="343" height="170"/>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="EYt-d3-TEe" userLabel="Result Image Stack View">
+                                        <rect key="frame" x="0.0" y="33" width="343" height="166"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8jG-Qv-1mi">
-                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="170"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="167.5" height="166"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="8jG-Qv-1mi" secondAttribute="height" multiplier="171:170" id="fRR-J4-8wH"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VbI-UA-zRi">
-                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="170"/>
+                                                <rect key="frame" x="175.5" y="0.0" width="167.5" height="166"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="VbI-UA-zRi" secondAttribute="height" multiplier="171:170" id="WDG-SN-xPm"/>
                                                 </constraints>
@@ -71,16 +71,43 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mrh-AK-EPT" userLabel="Play Button Stack View">
-                                <rect key="frame" x="16" y="613" width="343" height="34"/>
+                                <rect key="frame" x="16" y="447" width="343" height="200"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfQ-VV-XBM" customClass="PlayButtonControl" customModule="PaperScissorsStone" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="101" height="34"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfQ-VV-XBM">
+                                        <rect key="frame" x="0.0" y="0.0" width="101" height="200"/>
+                                        <state key="normal" image="paper"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="imageView?.contentMode">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3rt-f1-kU8"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0S-Oc-k90" customClass="PlayButtonControl" customModule="PaperScissorsStone" customModuleProvider="target">
-                                        <rect key="frame" x="121" y="0.0" width="101" height="34"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0S-Oc-k90">
+                                        <rect key="frame" x="121" y="0.0" width="101" height="200"/>
+                                        <state key="normal" image="scissors"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="imageView?.contentMode">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gmE-Ng-086"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecn-EQ-fRU" customClass="PlayButtonControl" customModule="PaperScissorsStone" customModuleProvider="target">
-                                        <rect key="frame" x="242" y="0.0" width="101" height="34"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecn-EQ-fRU">
+                                        <rect key="frame" x="242" y="0.0" width="101" height="200"/>
+                                        <state key="normal" image="stone"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="imageView?.contentMode">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4D1-tA-Bsl"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -105,13 +132,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="mrh-AK-EPT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0ZA-jR-fIa"/>
-                            <constraint firstItem="IVh-kK-5rI" firstAttribute="top" secondItem="TW2-Hp-I1I" secondAttribute="bottom" constant="362" id="3Ee-IM-YZf"/>
                             <constraint firstItem="IVh-kK-5rI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="C3w-O7-8XE"/>
-                            <constraint firstItem="TW2-Hp-I1I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="CPy-9f-pLo"/>
+                            <constraint firstItem="TW2-Hp-I1I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="CPy-9f-pLo"/>
                             <constraint firstItem="TW2-Hp-I1I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EkU-86-mPW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cFh-dA-2su" secondAttribute="bottom" constant="313" id="Q6O-9d-o02"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mrh-AK-EPT" secondAttribute="bottom" constant="20" id="VAf-hC-tbL"/>
                             <constraint firstItem="IVh-kK-5rI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="7" id="WTy-2S-zsb"/>
+                            <constraint firstItem="IVh-kK-5rI" firstAttribute="top" secondItem="cFh-dA-2su" secondAttribute="bottom" constant="72" id="ZGf-v5-uwR"/>
                             <constraint firstItem="cFh-dA-2su" firstAttribute="leading" secondItem="IVh-kK-5rI" secondAttribute="leading" constant="-7" id="gHX-Wi-cHQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mrh-AK-EPT" secondAttribute="trailing" constant="16" id="nAA-K9-Sg6"/>
                             <constraint firstItem="cFh-dA-2su" firstAttribute="trailing" secondItem="IVh-kK-5rI" secondAttribute="trailing" constant="-7" id="tKi-vP-5s7"/>
@@ -120,6 +147,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="loseLabel" destination="QhL-h9-yLi" id="0VA-um-65m"/>
+                        <outlet property="systemPlayImage" destination="VbI-UA-zRi" id="T39-oO-MQJ"/>
+                        <outlet property="winLabel" destination="Ke0-hw-o6M" id="qQk-5N-PYD"/>
+                        <outlet property="yourPlayImage" destination="8jG-Qv-1mi" id="hrw-d7-pkR"/>
                         <outletCollection property="buttonCollection" destination="VfQ-VV-XBM" collectionClass="NSMutableArray" id="OEH-aX-ZHf"/>
                         <outletCollection property="buttonCollection" destination="K0S-Oc-k90" collectionClass="NSMutableArray" id="rCr-3G-nGa"/>
                         <outletCollection property="buttonCollection" destination="ecn-EQ-fRU" collectionClass="NSMutableArray" id="VE4-2r-jaj"/>
@@ -130,4 +161,9 @@
             <point key="canvasLocation" x="24.800000000000001" y="29.23538230884558"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="paper" width="200" height="200"/>
+        <image name="scissors" width="200" height="200"/>
+        <image name="stone" width="200" height="200"/>
+    </resources>
 </document>
