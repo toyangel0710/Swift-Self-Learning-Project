@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GuessANumber" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="請輸入數字" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tcP-6z-DYB">
+                                <rect key="frame" x="20" y="164" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="數字從1~100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kQ-hH-YgR">
+                                <rect key="frame" x="0.0" y="80" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDs-ld-duu">
+                                <rect key="frame" x="20" y="504" width="335" height="30"/>
+                                <state key="normal" title="猜質數"/>
+                                <connections>
+                                    <action selector="guestPrimeNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cta-Os-A4y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="猜質數" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvG-Gl-5SP">
+                                <rect key="frame" x="0.0" y="394" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="輸入一個數" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c4y-9Q-9Tz">
+                                <rect key="frame" x="20" y="454" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Cz-ju-bWt">
+                                <rect key="frame" x="20" y="224" width="335" height="30"/>
+                                <state key="normal" title="猜對了嗎"/>
+                                <connections>
+                                    <action selector="checkAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="edr-ka-aHx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1kQ-hH-YgR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1c5-pQ-0Bj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Cz-ju-bWt" secondAttribute="trailing" constant="20" id="4BI-Mu-zfA"/>
+                            <constraint firstItem="1kQ-hH-YgR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="5gY-Vv-rCC"/>
+                            <constraint firstItem="c4y-9Q-9Tz" firstAttribute="top" secondItem="SvG-Gl-5SP" secondAttribute="bottom" constant="39" id="67v-p8-ULH"/>
+                            <constraint firstItem="tcP-6z-DYB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6LG-u4-f8S"/>
+                            <constraint firstItem="cDs-ld-duu" firstAttribute="top" secondItem="c4y-9Q-9Tz" secondAttribute="bottom" constant="20" id="E3m-9J-tD4"/>
+                            <constraint firstItem="cDs-ld-duu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FXO-NT-hvD"/>
+                            <constraint firstItem="SvG-Gl-5SP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HhS-om-F83"/>
+                            <constraint firstItem="2Cz-ju-bWt" firstAttribute="top" secondItem="tcP-6z-DYB" secondAttribute="bottom" constant="30" id="O3o-e0-J3y"/>
+                            <constraint firstItem="2Cz-ju-bWt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UlW-DA-1D6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cDs-ld-duu" secondAttribute="trailing" constant="20" id="WsW-mf-YAm"/>
+                            <constraint firstItem="c4y-9Q-9Tz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="X6Q-3o-PhC"/>
+                            <constraint firstItem="SvG-Gl-5SP" firstAttribute="top" secondItem="2Cz-ju-bWt" secondAttribute="bottom" constant="140" id="XsA-WF-Vgf"/>
+                            <constraint firstItem="cDs-ld-duu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bsg-4g-XJO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c4y-9Q-9Tz" secondAttribute="trailing" constant="20" id="fNR-Ah-hFf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1kQ-hH-YgR" secondAttribute="trailing" id="hSb-ey-evo"/>
+                            <constraint firstItem="tcP-6z-DYB" firstAttribute="top" secondItem="1kQ-hH-YgR" secondAttribute="bottom" constant="63" id="ksz-Sc-0m7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tcP-6z-DYB" secondAttribute="trailing" constant="20" id="nR6-kj-bUF"/>
+                            <constraint firstItem="2Cz-ju-bWt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rw9-KN-yED"/>
+                            <constraint firstItem="tcP-6z-DYB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t7P-Av-AQE"/>
+                            <constraint firstItem="1kQ-hH-YgR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tAP-id-iJd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SvG-Gl-5SP" secondAttribute="trailing" id="x3O-Qg-GQG"/>
+                            <constraint firstItem="SvG-Gl-5SP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x57-Cc-Xdz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputNumber" destination="tcP-6z-DYB" id="CrB-Zq-EDf"/>
+                        <outlet property="primeNumberLabel" destination="c4y-9Q-9Tz" id="6fl-9d-Rdl"/>
+                        <outlet property="primeResult" destination="SvG-Gl-5SP" id="KQs-tM-VCv"/>
+                        <outlet property="titleLabel" destination="1kQ-hH-YgR" id="kkx-hy-6h4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
