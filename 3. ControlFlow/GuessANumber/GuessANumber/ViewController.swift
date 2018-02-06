@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
         answer = Int(arc4random_uniform(100)) + 1
         print("answer: \(answer)")
     }
