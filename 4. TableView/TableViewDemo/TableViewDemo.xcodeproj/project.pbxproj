@@ -14,6 +14,8 @@
 		1AFE85C92028B84100495A92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFE85C72028B84100495A92 /* LaunchScreen.storyboard */; };
 		1AFE85D12029AF2500495A92 /* FoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE85D02029AF2500495A92 /* FoodTableViewController.swift */; };
 		1AFE85F5202AAC8200495A92 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE85F4202AAC8200495A92 /* FoodTableViewCell.swift */; };
+		1AFE85F7202AB80D00495A92 /* BeautifulFoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE85F6202AB80D00495A92 /* BeautifulFoodTableViewController.swift */; };
+		1AFE85F9202AB85500495A92 /* BeautifulFoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE85F8202AB85500495A92 /* BeautifulFoodTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		1AFE85CA2028B84100495A92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AFE85D02029AF2500495A92 /* FoodTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewController.swift; sourceTree = "<group>"; };
 		1AFE85F4202AAC8200495A92 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		1AFE85F6202AB80D00495A92 /* BeautifulFoodTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautifulFoodTableViewController.swift; sourceTree = "<group>"; };
+		1AFE85F8202AB85500495A92 /* BeautifulFoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautifulFoodTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +68,28 @@
 				1AFE85C52028B84100495A92 /* Assets.xcassets */,
 				1AFE85C72028B84100495A92 /* LaunchScreen.storyboard */,
 				1AFE85CA2028B84100495A92 /* Info.plist */,
+				1AFE85FA202AB87500495A92 /* CustomTableView */,
+				1AFE85FC202AB8AD00495A92 /* CustomTableView2 */,
+			);
+			path = TableViewDemo;
+			sourceTree = "<group>";
+		};
+		1AFE85FA202AB87500495A92 /* CustomTableView */ = {
+			isa = PBXGroup;
+			children = (
 				1AFE85D02029AF2500495A92 /* FoodTableViewController.swift */,
 				1AFE85F4202AAC8200495A92 /* FoodTableViewCell.swift */,
 			);
-			path = TableViewDemo;
+			path = CustomTableView;
+			sourceTree = "<group>";
+		};
+		1AFE85FC202AB8AD00495A92 /* CustomTableView2 */ = {
+			isa = PBXGroup;
+			children = (
+				1AFE85F8202AB85500495A92 /* BeautifulFoodTableViewCell.swift */,
+				1AFE85F6202AB80D00495A92 /* BeautifulFoodTableViewController.swift */,
+			);
+			path = CustomTableView2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +166,8 @@
 			files = (
 				1AFE85C12028B84100495A92 /* ViewController.swift in Sources */,
 				1AFE85F5202AAC8200495A92 /* FoodTableViewCell.swift in Sources */,
+				1AFE85F9202AB85500495A92 /* BeautifulFoodTableViewCell.swift in Sources */,
+				1AFE85F7202AB80D00495A92 /* BeautifulFoodTableViewController.swift in Sources */,
 				1AFE85D12029AF2500495A92 /* FoodTableViewController.swift in Sources */,
 				1AFE85BF2028B84100495A92 /* AppDelegate.swift in Sources */,
 			);
