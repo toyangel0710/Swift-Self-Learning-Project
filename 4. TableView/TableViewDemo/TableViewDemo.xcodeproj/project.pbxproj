@@ -13,6 +13,7 @@
 		1AFE85C62028B84100495A92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AFE85C52028B84100495A92 /* Assets.xcassets */; };
 		1AFE85C92028B84100495A92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFE85C72028B84100495A92 /* LaunchScreen.storyboard */; };
 		1AFE85D12029AF2500495A92 /* FoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE85D02029AF2500495A92 /* FoodTableViewController.swift */; };
+		1AFE85F5202AAC8200495A92 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE85F4202AAC8200495A92 /* FoodTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1AFE85C82028B84100495A92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AFE85CA2028B84100495A92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AFE85D02029AF2500495A92 /* FoodTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewController.swift; sourceTree = "<group>"; };
+		1AFE85F4202AAC8200495A92 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				1AFE85C72028B84100495A92 /* LaunchScreen.storyboard */,
 				1AFE85CA2028B84100495A92 /* Info.plist */,
 				1AFE85D02029AF2500495A92 /* FoodTableViewController.swift */,
+				1AFE85F4202AAC8200495A92 /* FoodTableViewCell.swift */,
 			);
 			path = TableViewDemo;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AFE85C12028B84100495A92 /* ViewController.swift in Sources */,
+				1AFE85F5202AAC8200495A92 /* FoodTableViewCell.swift in Sources */,
 				1AFE85D12029AF2500495A92 /* FoodTableViewController.swift in Sources */,
 				1AFE85BF2028B84100495A92 /* AppDelegate.swift in Sources */,
 			);

@@ -40,9 +40,11 @@ class FoodTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = foodNames[indexPath.row]
-        cell.imageView?.image = UIImage(named:foodImages[indexPath.row])
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FoodTableViewCell
+        cell.foodName.text = foodNames[indexPath.row]
+        cell.foodImage.image = UIImage(named:foodImages[indexPath.row])
+        cell.foodImage.layer.cornerRadius = 30.0
+        cell.foodImage.clipsToBounds = true
         return cell
     }
  

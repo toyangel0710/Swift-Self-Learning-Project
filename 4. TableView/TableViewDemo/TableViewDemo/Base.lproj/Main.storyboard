@@ -68,7 +68,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="VvM-6S-lEe">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="VvM-6S-lEe" customClass="FoodTableViewCell" customModule="TableViewDemo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VvM-6S-lEe" id="9ZY-Nm-QN7">
@@ -118,6 +118,12 @@
                                         <constraint firstAttribute="trailing" secondItem="hPU-7a-Z4s" secondAttribute="trailing" id="ufz-bz-unr"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="foodImage" destination="Q4i-BR-byk" id="V8f-WO-bRw"/>
+                                    <outlet property="foodLocation" destination="0gK-ST-wrB" id="qmU-87-8hh"/>
+                                    <outlet property="foodName" destination="rZI-Ft-6MV" id="2e1-iL-7f3"/>
+                                    <outlet property="foodType" destination="nwZ-yb-TXL" id="6NU-1v-aOj"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
