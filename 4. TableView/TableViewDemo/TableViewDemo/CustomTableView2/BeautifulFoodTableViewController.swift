@@ -36,8 +36,5 @@ class BeautifulFoodTableViewController: UITableViewController {
         
         return cell
     }
-    
-
-    
 
 }

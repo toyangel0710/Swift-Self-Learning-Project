@@ -46,7 +46,14 @@ class FoodTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FoodTableViewCell
         cell.foodName.text = foodNames[indexPath.row]
         cell.foodImage.image = UIImage(named:foodImages[indexPath.row])
-        cell.foodImage.layer.cornerRadius = 30.0
+//        cell.foodImage.layer.cornerRadius = 30.0 //圓角
+        cell.foodImage.layer.cornerRadius = cell.foodImage.bounds.width / 2.0 //用圖片視圖的寬度來計算
+        /*
+        cell.foodImage.layer.borderWidth = 2.5
+        cell.foodImage.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+         cell.foodImage.layer.opacity = 0.3
+ */
+        
         cell.foodImage.clipsToBounds = true
         cell.foodLocation.text = foodLocation[indexPath.row]
         cell.foodType.text = foodType[indexPath.row]
